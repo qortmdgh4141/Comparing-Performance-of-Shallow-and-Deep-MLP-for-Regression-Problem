@@ -97,8 +97,8 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   plt.legend(['Actual Data']) 
   plt.show()
   ```
-  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/actual_data_graph.png?raw=true"  width="910" > <br/>
-  
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/actual_data_graph.png?raw=true"  width="970" > <br/>
+   
 - _**Splitting Data**_ <br/>  
   
   ```
@@ -211,7 +211,7 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   plt.legend(['Actual Data', 'Predicted Data by Shallow Model']) 
   plt.show()
   ```
- 
+   <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_data_graph.png?raw=true"  width="960" > 
 - _**Deep Model**_ <br/> 
   
   ```
@@ -276,14 +276,21 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   plt.legend(['Actual Data', 'Predicted Data by Deep Model']) 
   plt.show()
   ```
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/deep_data_graph.png?raw=true"  width="950" > 
   <br/>
   
 ### 5. &nbsp; Research Results  <br/><br/>
+    
+- _The purpose of this study was to train and evaluate a multi-layer perceptron regression model for the function y=sqrt(x) using integers from 1 to 100 based on the hypothesis that a simpler structure may perform better on a small and simple problem. At this time, the performance of the models was evaluated using a metric called MAPE (Mean Absolute Percentage Error), which measures the average percentage error between the predicted and actual values. Just to let you know, the closer the model's predicted values are to the actual values, the lower the MAPE value and the closer the MAPE value is to 0, the better the model's performance is considered to be._ <br/><br/><br/>
 
-- _The purpose of this study was to train and evaluate a multi-layer perceptron regression model for the function y=sqrt(x) using integers from 1 to 100 based on the hypothesis that a simpler structure may perform better on a small and simple problem. At this time, the performance of the models was evaluated using a metric called MAPE (Mean Absolute Percentage Error), which measures the average percentage error between the predicted and actual values. Just to let you know, the closer the model's predicted values are to the actual values, the lower the MAPE value and the closer the MAPE value is to 0, the better the model's performance is considered to be._ <br/><br/>
+<img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_mape_graph.png?raw=true" width="930"> <br/>
 
-- _In this study, the MAPE value for the Deep Model was 0.35, while the MAPE value for the Shallow Model was 0.01, indicating that the performance of the Shallow Model was superior. Furthermore, when we examine the scatter plot, most of the data predicted by the Shallow Model matches the actual data, while the Deep Model only predicts values between 6.3509680903363845 and 6.351427249440577._ <br/><br/>
+- _In this study, the MAPE value for the Deep Model was 0.35, while the MAPE value for the Shallow Model was 0.01, indicating that the performance of the Shallow Model was superior._ <br/><br/><br/>
 
+<img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_data_graph.png?raw=true"><br/> 
+
+- _Furthermore, when we examine the scatter plot, most of the data predicted by the Shallow Model matches the actual data, while the Deep Model only predicts values between 6.3509680903363845 and 6.351427249440577._ <br/><br/>
+  
 - _The reason for these results is believed to be overfitting in the Deep Model due to the simple problem and small amount of data. When predicting simple problems or with small amounts of data, a Shallow Model that does not experience overfitting may perform better, and this implies that increasing the number of parameters or deepening the network structure does not always lead to good results._ <br/><br/>
 
 - _Therefore, it is important to design the model appropriately based on the complexity of the problem, as well as the diversity and quantity of data, as Deep Model may not always guarantee better results in all situations._ <br/><br/>
