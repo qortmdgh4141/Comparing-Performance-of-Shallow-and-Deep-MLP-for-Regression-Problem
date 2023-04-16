@@ -283,6 +283,42 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
     
 - _The purpose of this study was to train and evaluate a multi-layer perceptron regression model for the function y=sqrt(x) using integers from 1 to 100 based on the hypothesis that a simpler structure may perform better on a small and simple problem. At this time, the performance of the models was evaluated using a metric called MAPE (Mean Absolute Percentage Error), which measures the average percentage error between the predicted and actual values. Just to let you know, the closer the model's predicted values are to the actual values, the lower the MAPE value and the closer the MAPE value is to 0, the better the model's performance is considered to be._ <br/><br/><br/>
 
+  ```
+  def gradientbars(bars, cmap_list):
+    # cmap 가중치 설정
+    grad = np.atleast_2d(np.linspace(0,1,256)).T
+    # 플롯 영역 재설정
+    ax = bars[0].axes
+    lim = ax.get_xlim()+ax.get_ylim()
+    ax.axis(lim)
+    # 각 막대에 색 입히기
+    max = 0
+    for i, bar in enumerate(bars):
+        bar.set_facecolor("none")
+        x,y = bar.get_xy()
+        w, h = bar.get_width(), bar.get_height()
+        ax.imshow(grad, extent=[x,x+w,y,y+h], aspect="auto", cmap=cmap_list[i])
+        plt.text(bar.get_width(), bar.get_y() + bar.get_height() / 2, f' ==> {df.Mape[i]:.2f}', ha='left', va='center', fontsize=10, color='black')
+  ```
+  <br/>
+  
+    ```
+  fig, ax = plt.subplots(figsize=(8,4))
+  df = pd.DataFrame({'Model':['Shallow Model', 'Deep Model'], 'Mape':[shallow_model_mape, deep_model_mape]})
+  cmap_color = ['viridis_r', 'YlOrRd']
+  gradientbars(ax.barh(df.Model, df.Mape), cmap_color)
+
+  plt.title(f"Comparison of MAPE values between shallow and deep models", fontsize=12)
+  plt.xlabel('Mape', fontsize=10)
+  plt.xlim([0, 0.4])
+  plt.xticks(fontsize=10)
+  plt.yticks(fontsize=10)
+  plt.tight_layout()
+  plt.show()
+  ```
+  <br/>
+  
+
 <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_mape_graph.png?raw=true" width="930"> <br/>
 
 - _In this study, the MAPE value for the Deep Model was 0.35, while the MAPE value for the Shallow Model was 0.01, indicating that the performance of the Shallow Model was superior._ <br/><br/><br/>
