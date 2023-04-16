@@ -3,7 +3,7 @@
   
 ### 1. &nbsp; Research Objective <br/><br/>
 
-- _The purpose of this study is to train and evaluate a multi-layer perceptron regression model for the function y=sqrt(x), where x is an integer between 1 and 100. In such cases where the data is limited and the problem is simple, we hypothesize that a simpler model structure may perform better. To test this hypothesis, we will use the MLPRegressor module from sklearn to train and evaluate a shallow model with one hidden layer and two nodes per layer, and a deep model with four hidden layers and eight nodes per layer. The goal is to compare the performance of these models and determine which one performs better._ <br/><br/><br/> 
+- _The purpose of this study is to train and evaluate a multi-layer perceptron regression model for the function y=sqrt(x), where x is an integer between 1 and 100. In such cases where the data is limited and the problem is simple, I hypothesize that a simpler model structure may perform better. To test this hypothesis, I will use the MLPRegressor module from sklearn to train and evaluate a shallow model with one hidden layer and two nodes per layer, and a deep model with four hidden layers and eight nodes per layer. The goal is to compare the performance of these models and determine which one performs better._ <br/><br/><br/> 
 
 ### 2. &nbsp; Key Components of the Neural Network Model and Experimental Settings  <br/><br/>
 
