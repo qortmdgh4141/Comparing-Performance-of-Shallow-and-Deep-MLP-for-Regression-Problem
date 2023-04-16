@@ -299,10 +299,7 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
         w, h = bar.get_width(), bar.get_height()
         ax.imshow(grad, extent=[x,x+w,y,y+h], aspect="auto", cmap=cmap_list[i])
         plt.text(bar.get_width(), bar.get_y() + bar.get_height() / 2, f' ==> {df.Mape[i]:.2f}', ha='left', va='center', fontsize=10, color='black')
-  ```
-  <br/>
-  
-    ```
+
   fig, ax = plt.subplots(figsize=(8,4))
   df = pd.DataFrame({'Model':['Shallow Model', 'Deep Model'], 'Mape':[shallow_model_mape, deep_model_mape]})
   cmap_color = ['viridis_r', 'YlOrRd']
@@ -319,11 +316,29 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   <br/>
   
 
-<img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_mape_graph.png?raw=true" width="930"> <br/>
+<img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_mape_graph.png?raw=true" width="930">
 
 - _In this study, the MAPE value for the Deep Model was 0.35, while the MAPE value for the Shallow Model was 0.01, indicating that the performance of the Shallow Model was superior._ <br/><br/><br/>
 
-<img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_data_graph.png?raw=true" width="940"><br/> 
+
+  ```
+  # 1~100 사이의 X값에 대응하는 Y의 실제 값과 테스트 데이터로 예측한 값을 산포도로 출력하면, 예측 값이 실제 값과 비슷한 결과를 도출 
+  # 실제 데이터의 분포
+  plt.figure(figsize=(8, 4))
+  plt.scatter(x, y, color='g')
+  # 테스트 데이터의 분포
+  plt.scatter(x_test, y_pred_inverse, color='r')
+  plt.scatter(x_test, y_pred_inverse_extended, color='b')
+
+  plt.title('y=sqrt(x)')
+  plt.xlabel('X')
+  plt.ylabel('Y')
+  plt.legend(['Actual Data', 'Predicted Data by Shallow Model', 'Predicted Data by Deep Model'],fontsize=8)
+  plt.show()
+  ```
+  <br/>
+  
+<img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/shallow_deep_data_graph.png?raw=true" width="940">
 
 - _Furthermore, when we examine the scatter plot, most of the data predicted by the Shallow Model matches the actual data, while the Deep Model only predicts values between 6.3509680903363845 and 6.351427249440577._ <br/><br/>
   
