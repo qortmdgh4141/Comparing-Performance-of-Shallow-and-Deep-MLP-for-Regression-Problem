@@ -142,7 +142,7 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   x_test_norm = scalerX.transform(x_test)
   y_test_norm = scalerY.transform(y_test)
   ```
-   <br/> <br/> <br/> 
+  <br/> 
 
 ### 4. &nbsp; Training and Testing MLP Models <br/><br/>
 
@@ -275,6 +275,7 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   plt.legend(['Actual Data', 'Predicted Data by Deep Model']) 
   plt.show()
   ```
+  <br/>
   
 ### 5. &nbsp; Research Results  <br/><br/>
 
