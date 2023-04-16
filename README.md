@@ -97,8 +97,9 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   plt.legend(['Actual Data']) 
   plt.show()
   ```
-
-- _**Splitting Data**_ <br/> 
+  <img src="https://github.com/qortmdgh4141/Comparing-Performance-of-Shallow-and-Deep-MLP-for-Regression-Analysis/blob/main/image/actual_data_graph.png?raw=true"  width="910" > <br/>
+  
+- _**Splitting Data**_ <br/>  
   
   ```
   # 학습용과 테스트용 데이터를 7:3으로 분리
