@@ -1,4 +1,4 @@
-# 📈  Comparing Performance of Shallow and Deep MLP for Regression Analysis 
+# 📈  Comparing Performance of Shallow and Deep MLP for Regression Problem
 <br/>
   
 ### 1. &nbsp; Research Objective <br/><br/>
