@@ -7,8 +7,7 @@
 
 ### 2. &nbsp; Key Components of the Neural Network Model and Experimental Settings  <br/><br/>
 
-- _Input Nodes : 1_ <br/>
-_Output Nodes : 1_ <br/>
+- _Input Nodes & Output Nodes_ <br/>
 
   - _The model includes one input node and one output node due to the single input and output value._ <br/><br/>
 
@@ -45,7 +44,7 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   
   - _This makes the MSE a reliable indicator of the error between the predicted and actual values in the model._ <br/><br/>
 
-- _Maximum Number of Learning Iterations : 100_ <br/>
+- _Maximum Number of Learning Iterations_ <br/>
 
   - _In this experiment, the model is trained by iterating up to a maximum of 100 times._ <br/>
   
