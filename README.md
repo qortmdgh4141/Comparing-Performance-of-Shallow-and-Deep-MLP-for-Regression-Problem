@@ -69,17 +69,6 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
   import matplotlib.pyplot as plt
   ```
 
-- _**Package Settings**_ <br/> 
-  
-  ```
-  # MLP의 회귀분석을 위해서 sklearn의 MLPRegressor 모듈을 사용
-  from sklearn.neural_network import MLPRegressor
-  from sklearn.preprocessing import MinMaxScaler
-  from sklearn.model_selection import train_test_split
-  from sklearn.metrics import mean_absolute_percentage_error
-  import numpy as np
-  import matplotlib.pyplot as plt
-  ```  
 - _**Data Preparation**_ <br/> 
   
   ```
