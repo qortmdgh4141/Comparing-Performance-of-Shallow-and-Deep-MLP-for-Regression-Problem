@@ -362,3 +362,6 @@ Number of Hidden Nodes in Deep Model : 8 <br/>
 <p>
   <img src="https://img.shields.io/badge/MLP-5C5543?style=flat-square?"/>
 </p> 
+
+### 💾 Datasets used in the project
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Sqrt(x) Regression Dataset <br/>
