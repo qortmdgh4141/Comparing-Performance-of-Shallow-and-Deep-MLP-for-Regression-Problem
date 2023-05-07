@@ -10,7 +10,7 @@
 - _Input Nodes : 1_ <br/>
 _Output Nodes : 1_ <br/>
 
-  - _The model includes one input node and one output node due to the single input and output value_ <br/><br/>
+  - _The model includes one input node and one output node due to the single input and output value._ <br/><br/>
 
 - Number of Hidden Layers in Shallow Model : 1 <br/>
 Number of Hidden Nodes in Shallow Model : 2 <br/>
