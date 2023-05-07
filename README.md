@@ -17,33 +17,42 @@ Number of Hidden Nodes in Shallow Model : 2 <br/>
 Number of Hidden Layers in Deep Model : 4 <br/>
 Number of Hidden Nodes in Deep Model : 8 <br/>
 
-  - _The number of hidden layers in a neural network is a key factor that affects its ability to learn complex patterns._
-  - _Generally,  increasing the number of hidden layers can provide advantages in learning complex features, but it may also come with the trade-offs of larger model size and longer training time._ 
+  - _The number of hidden layers in a neural network is a key factor that affects its ability to learn complex patterns._<br/>
+  
+  - _Generally,  increasing the number of hidden layers can provide advantages in learning complex features, but it may also come with the trade-offs of larger model size and longer training time._ <br/>
+  
   - _On the other hand, having fewer hidden layers can make the model simpler and faster to train, but it may not be able to capture complex relationships in the data._ <br/><br/>
 
 - _Activation Function : Logistic Function (Sigmoid Function)_ <br/>
 
-  - _In this experiment, instead of the commonly used relu function in regression analysis, the logistic function (sigmoid function) is utilized, which outputs values between 0 and 1._
+  - _In this experiment, instead of the commonly used relu function in regression analysis, the logistic function (sigmoid function) is utilized, which outputs values between 0 and 1._<br/>
 
-  - _When training with a small dataset, overfitting can be a problem due to the lack of diversity in the data._ 
+  - _When training with a small dataset, overfitting can be a problem due to the lack of diversity in the data._ <br/>
+  
   - _However, the logistic function has the unique property of saturation as the slope approaches 0. By leveraging this property, the number of nodes in the hidden layer can be limited to adjust the model size, leading to model simplification, prevention of overfitting, and improvement of generalization ability._ <br/><br/>
 
 - _Optimization Algorithm : L-BFGS (Limited-memory BFGS)_ <br/>
 
-  - _L-BFGS estimates gradients by using a subset of the data instead of processing the entire dataset at once._ 
-  - _Due to the potential for memory shortages, L-BFGS may not be suitable for processing very large datasets, and other optimization algorithms should be considered._
+  - _L-BFGS estimates gradients by using a subset of the data instead of processing the entire dataset at once._ <br/>
+   
+  - _Due to the potential for memory shortages, L-BFGS may not be suitable for processing very large datasets, and other optimization algorithms should be considered._<br/>
+  
   - _However, when working with small datasets, L-BFGS can be advantageous in reducing training time and memory usage._ <br/><br/>
 
 - _Cost Function : MSE (Mean Squared Error_) <br/>
 
-  - _In regression analysis, the MSE (Mean Squared Error) is a commonly used evaluation metric that calculates the average of the squared differences between the predicted values and the actual values._ 
+  - _In regression analysis, the MSE (Mean Squared Error) is a commonly used evaluation metric that calculates the average of the squared differences between the predicted values and the actual values._ <br/>
+  
   - _This makes the MSE a reliable indicator of the error between the predicted and actual values in the model._ <br/><br/>
 
 - _Maximum Number of Learning Iterations : 100_ <br/>
 
-  - _In this experiment, the model is trained by iterating up to a maximum of 100 times._ 
-  - _The number of iterations during training affects the speed and accuracy of the model, and I, as the researcher conducting the experiment, have set the number of iterations based on my experience of tuning deep learning models._ 
-  - _Setting the number of iterations too low can result in underfitting, where the model is not trained enough, while setting it too high can result in overfitting._ 
+  - _In this experiment, the model is trained by iterating up to a maximum of 100 times._ <br/>
+  
+  - _The number of iterations during training affects the speed and accuracy of the model, and I, as the researcher conducting the experiment, have set the number of iterations based on my experience of tuning deep learning models._ <br/>
+  
+  - _Setting the number of iterations too low can result in underfitting, where the model is not trained enough, while setting it too high can result in overfitting._ <br/>
+  
   - _Therefore, I have chosen what I believe to be the most appropriate number of iterations._ <br/> <br/> <br/> 
 
 ### 3. &nbsp; Data Preprocessing and Analysis <br/><br/>
